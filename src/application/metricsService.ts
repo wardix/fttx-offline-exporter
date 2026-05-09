@@ -116,7 +116,7 @@ export async function pollMetricsBackground(): Promise<void> {
       const subId = alert.subscriber_id || 'N/A'
       const subName = (alert.subscriber_name || 'N/A').replace(/"/g, '\\"')
 
-      output += `fttx_subscriber_offline_status{subscriber_id="${subId}",subscriber_name="${subName}",circuit_id="${circuitId}",status="${status}",phase="${phase}",cause="${cause}",offline_time="${offlineTime}"} 1\n`
+      output += `fttx_subscriber_offline_status{subscriber_id="${subId}",subscriber_name="${subName}",circuit_id="${circuitId}",status="${status}",cause="${cause}",offline_time="${offlineTime}"} 1\n`
     }
 
     cachedMetricsOutput = output
