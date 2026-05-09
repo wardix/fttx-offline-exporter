@@ -1,0 +1,26 @@
+{
+  "name": "fttx-offline-exporter",
+  "version": "1.0.0",
+  "description": "Prometheus exporter for FTTX subscriber offline status, bridging Karma alerts with Netpulse and ONU commands.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "keywords": [
+    "prometheus",
+    "exporter",
+    "fttx",
+    "hono",
+    "monitoring"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hono": "^4.12.18"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.14",
+    "@types/bun": "latest"
+  }
+}
