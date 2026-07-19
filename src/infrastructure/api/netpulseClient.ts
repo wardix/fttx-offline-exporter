@@ -8,7 +8,10 @@ export async function fetchBulkIpStatus(
 
   const response = await fetch(config.STATUS_API_URL, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': config.STATUS_API_KEY,
+    },
     body: JSON.stringify({ ips: [...new Set(ips)] }),
   })
 

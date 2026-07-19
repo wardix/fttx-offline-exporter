@@ -3,6 +3,7 @@ export const config = {
     process.env.ALERTS_URL || 'https://alerts.example.com/api/alerts.json',
   STATUS_API_URL:
     process.env.STATUS_API_URL || 'https://status.example.com/api/bulk',
+  STATUS_API_KEY: process.env.STATUS_API_KEY || '',
   ONU_COMMAND_URL:
     process.env.ONU_COMMAND_URL ||
     'http://onu-manager.example.com:8002/command',
